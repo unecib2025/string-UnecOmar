@@ -1,0 +1,155 @@
+#LABARATORNIY 5------------------------------------------------------------------------------------
+
+#5.1
+# name = input("Enter your name: ")
+# name = name.strip()
+# if name.isalnum():
+#     name = name.lower()
+#     print('imya korektno')
+# else:
+#     print('error')
+
+
+
+#5.2 я в чат гпт вбил но не понял можно по своему сделать?
+#5.2 1) chat qpt
+#password = input("Введите пароль: ")
+
+# Проверки
+# has_len = len(password) >= 8
+# has_digit = False
+# has_upper = False
+#
+# for ch in password:
+#     if ch.isdigit():
+#         has_digit = True
+#     if ch.isupper():
+#         has_upper = True
+#
+#  Итог
+# if has_len and has_digit and has_upper:
+#     print("Пароль надёжен")
+# else:
+#     print("Пароль слаб")
+
+#5.2 2) my variant
+# password = input('vedite parol:')
+# a = 0
+# b = 0
+# password = list(password)
+# for i in password:
+#     if i>='0' and i<='9':
+#         a = a + 1
+#     if i>='A' and i<='Z':
+#         b = b + 1
+# if len(password)>=8 and a>0 and b>0:
+#     print('parol nadejen')
+# else:
+#     print('parol slab')
+# ГЛАВНОЕ ЭТО РЕЗУЛЬТАТ А НЕ КАК НАПИСАННА ПРОГРАМА
+
+
+#5.3
+# log = 'ACCESS DENIED'
+# lloq = log.capitalize()
+# result = llog + 'vxod zapreshon'
+# print(result)
+
+
+#5.4
+# data = "ERROR connection ERROR failed access"
+# data = data.replace("ERROR", "ALERT")
+# a = data.count("ALERT")
+# print(data)
+# print("Количество предупреждений:", a)
+
+
+#5.5
+# email = input("vedite pochtu: ")
+# a = email.find("@")
+# if a == -1:
+#     print('error')
+# if "@" in email:
+#     part = email.split('@')
+#     if len(part) == 2 and part[1].endswith('.com') :
+#         print("Домен:", part[1])
+#     else:
+#         print("Некорректный адрес")
+# else:
+#     print("Некорректный адрес")
+
+
+#5.6
+# a = input()
+# a = a.strip()
+# a = a.lower()
+# a = a.replace(' ', '_')
+# print(a)
+
+
+#5.7
+# message = input('vvedite message: ')
+# if message.find('SECRET') != -1:
+#     message = message.replace('SECRET','******')
+#     print(message, 'Иначе — сообщение о безопасности')
+# else:
+#     print('error')
+
+
+#5.8
+# word = input("vvedite slove: ")
+# codes = ""
+# for char in word:
+#     codes = codes +  str(ord(char)) + " "
+# print("kodi simvolov:", codes)
+# chars = ""
+# for code in codes.split():
+#     chars = chars +  chr(int(code))
+# print("vostanovlennoye slovo:", chars)
+
+
+#5.9
+# text = "login attempt failed access denied unauthorized access"
+# a = text.count('failed')
+# b = text.count('denied')
+# if a > 0 and b > 0:
+#     print('popitka nesonkchianirovannoqo dostupa')
+
+
+#5.10
+# text = input()
+# #1 predlojeniye - shtobi nayti kolichestvo predlojeniy nado k kolichestvu tochek pribavit 1
+# a = text.split('.')
+# print(len(a))
+# #2 simvoli bez probelov
+# k = 0
+# for i in text:
+#     if i != " ":
+#         k = k + 1
+# print(k)
+# #3 proverka na nacalo texta
+# if text.lower().startswith("report"):
+#     print("yes")
+# else:
+#     print("no")
+# #4 kolichestvo error
+# if text.lower().count("error") >= 2:
+#     print("oshibki naydeni")
+
+
+# kontrolniye voprosi
+#1 Строка — это последовательность символов, заключённая в одинарные '...' или двойные "..." кавычки.
+
+#2 Unicode — это стандарт кодирования символов, который позволяет представлять символы всех языков мира, а не только латиницу.
+# Например: символы кириллицы, иероглифы, эмодзи — всё это поддерживается Unicode.
+
+#3 strip() — удаляет пробелы или другие символы с начала и конца строки. replace(old, new) — заменяет подстроки old на new.
+# find(sub) — ищет подстроку sub в строке и возвращает индекс первого вхождения или -1, если не найдено.
+
+#4 Используется метод count(sub):
+
+#5 upper() — переводит все буквы строки в заглавные. capitalize() — делает первую букву заглавной, а все остальные — строчными.
+
+#6 ord(char) — возвращает числовой код символа char в Unicode. chr(code) — возвращает символ по его числовому коду code
+
+#7 Используется метод startswith(). Он возвращает True, если строка начинается с указанной подстроки, и False — если нет.
